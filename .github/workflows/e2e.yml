@@ -102,4 +102,4 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: devopsbindu/dockerrepo@v1
