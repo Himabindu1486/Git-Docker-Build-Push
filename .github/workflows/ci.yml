@@ -29,7 +29,7 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: himabindu1486/ghaction-dump-context@v1
+        uses: himabindu1486/Git-Docker-Build-Pushcontext@v1
 
   git-context:
     runs-on: ubuntu-latest
@@ -83,7 +83,7 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: Himabindu1486/Git-Docker-Build-Push-context@v1
 
   git-context-secret:
     runs-on: ubuntu-latest
