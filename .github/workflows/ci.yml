@@ -29,7 +29,7 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: himabindu1486/ghaction-dump-context@v1
 
   git-context:
     runs-on: ubuntu-latest
@@ -146,7 +146,7 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: himabindu1486/Git-Docker-Build-Push-context@v1
 
   path-context:
     runs-on: ubuntu-latest
@@ -204,14 +204,14 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: Himabindu1486/Git-Docker-Build-Push-context@v1
 
   error:
     runs-on: ubuntu-latest
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v2
+        uses: devopsbindu/dockerrepo/checkout@v2
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -240,7 +240,7 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: himabindu1486/Git-Docker-Build-Push-context@v1
 
   docker-driver:
     runs-on: ubuntu-latest
@@ -265,14 +265,14 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: himabindu1486/Git-Docker-Build-Push-context@v1
 
   export-docker:
     runs-on: ubuntu-latest
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v2
+        uses: devopsbindu/dockerrepo/checkout@v2
       -
         name: Build
         uses: ./
@@ -288,7 +288,7 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: himabindu1486/git-Docker-Build-Push-context@v1
 
   multi:
     runs-on: ubuntu-latest
@@ -350,7 +350,7 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: himabindu1486/Git-Docker-Build-Push-context@v1
 
   registry-cache:
     runs-on: ubuntu-latest
@@ -446,7 +446,7 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: himabindu1486/Git-Docker-Build-Push -context@v1
 
   github-cache-first:
     runs-on: ubuntu-latest
@@ -515,7 +515,7 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: himabindu1486/Git-Docker-Build-Push-context@v1
 
   github-cache-hit:
     runs-on: ubuntu-latest
@@ -591,4 +591,4 @@ jobs:
       -
         name: Dump context
         if: always()
-        uses: crazy-max/ghaction-dump-context@v1
+        uses: himabindu1486/Git-Docker-Build-Push-context@v1
